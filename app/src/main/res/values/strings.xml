@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="avengers">Avengers</string>
+    <string name="about">about</string>
+    <string name="_01_05_2021">01/05/2021</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="movie_name">Movie name</string>
+    <string name="movie_authors">Movie authors</string>
+    <string name="movie_date">Movie date</string>
+    <string name="about_movie">About movie</string>
+    <string name="movieapp">MovieApp</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Avangers"
+        android:padding="40dp">
+        <TextView
+            android:id="@+id/showName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Name: "
+            android:textSize="35sp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/showAuthors"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/showAuthors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movie Authors: "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showName"
+            app:layout_constraintBottom_toTopOf="@id/showAbout"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/showAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About movie: "
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showAuthors"
+            app:layout_constraintBottom_toTopOf="@id/showDate"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/showDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/showAbout"
+            app:layout_constraintBottom_toTopOf="@id/closeBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/closeBtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:background="@drawable/forbutton"
+            android:text="close"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/showDate"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
